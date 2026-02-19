@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Unión Tlaxcala F.C. | La Fuerza de Tlaxcala</title>
+    <meta name="description" content="Unión Tlaxcala F.C. - Club de fútbol juvenil de Hueyotlipan, Tlaxcala. Compitiendo en la Liga Nacional TDM desde 2025.">
+    <meta name="keywords" content="fútbol, tlaxcala, unión tlaxcala, liga tdm, futbol mexicano">
+    <meta name="author" content="Unión Tlaxcala F.C.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uniontlaxcala.com">
+    <meta property="og:title" content="Unión Tlaxcala F.C. | La Fuerza de Tlaxcala">
+    <meta property="og:description" content="Club de fútbol juvenil de Hueyotlipan, Tlaxcala. ¡Forjando los próximos cracks de México!">
+    <meta property="og:image" content="logo-removebg-preview.png">
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-space">
+                <img src="logo-removebg-preview.png" alt="Logo Unión Tlaxcala F.C.">
+            </div>
+            <div class="nav-center">
+                <span class="slogan-animate">MÁS UNIDOS QUE NUNCA</span>
+            </div>
+            
+            <!-- Botón menú hamburguesa para móviles -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Menú desktop -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active-link">Inicio</a></li>
+                <li><a href="vistaprevia.html">VISTA PREVIA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menú móvil overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Menú móvil links -->
+    <div class="mobile-menu-links" id="mobileMenuLinks">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Cerrar menú">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="index.html" class="active-link">Inicio</a></li>
+            <li><a href="vistaprevia.html">VISTA PREVIA</a></li>
+        </ul>
+    </div>
+
+    <header class="hero">
+        <div id="particles-js"></div> 
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge-tdm animated-badge">LIGA NACIONAL TDM</div>
+            <h1 class="animated-title">UNIÓN TLAXCALA <span class="accent">F.C.</span></h1>
+            <p class="animated-subtitle">EL ORGULLO DE LA REGIÓN PONIENTE</p>
+            <a href="#historia" class="btn-neon animated-button">DESCUBRE MÁS</a>
+        </div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="2025">0</h2>
+            <span>FUNDACIÓN</span>
+        </div>
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="3">0</h2>
+            <span>DIVISIÓN</span>
+        </div>
+        <div class="stat-item reveal">
+            <h2 class="counter" data-target="100">0</h2> 
+            <span>% PASIÓN</span>
+        </div>
+    </section>
+
+    <main class="main-content" id="historia">
+        
+        <section class="info-card reveal-left">
+            <h2>Nuestra Historia</h2>
+            <div class="separator"></div>
+            <p>
+                Unión Tlaxcala F.C. es un club deportivo juvenil con sede en <strong>Hueyotlipan, Tlaxcala</strong>. 
+                Desde el <strong>25 de agosto de 2025</strong>, competimos con honor y pasión en la 
+                <strong>Liga Nacional Tercera División Mexicana (TDM)</strong>, forjando el camino para los próximos cracks de México.
+            </p>
+        </section>
+
+        <section class="mv-container">
+            <div class="mv-card reveal-bottom">
+                <i class="fas fa-bullseye"></i>
+                <h3>Misión</h3>
+                <p>Formar talentos de élite en la Región Poniente del Estado de Tlaxcala bajo un estricto régimen de disciplina y desarrollo profesional.</p>
+            </div>
+            <div class="mv-card reveal-bottom">
+                <i class="fas fa-eye"></i>
+                <h3>Visión</h3>
+                <p>Ser la cantera más prestigiosa de la Región Poniente del Estado de Tlaxcala, elevando el perfil de nuestros jóvenes talentos a nivel nacional.</p>
+            </div>
+        </section>
+
+        <section class="league-info-section reveal-bottom" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="league-card" style="background: linear-gradient(145deg, #0a0a0a, #1a1a1a); border: 1px solid #333; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <div class="league-header" style="padding: 40px 40px 20px;">
+                    <span style="color: #e31e24; letter-spacing: 3px; font-size: 0.8rem; font-weight: bold; display: block; margin-bottom: 10px;">ENTORNO FEDERATIVO</span>
+                    <h2 style="font-family: 'Oswald', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem); color: #fff; text-transform: uppercase;">Información de la <span class="accent">Liga MXA Independiente</span></h2>
+                </div>
+                
+                <div class="league-content" style="padding: 0 40px 40px;">
+                    <p style="color: #ccc; margin-bottom: 20px; font-size: clamp(0.9rem, 2.5vw, 1.1rem); line-height: 1.8;">
+                        La <strong>Liga MXA Independiente</strong> es una liga de fútbol de carácter independiente y semiprofesional, dependiente de la <strong>FMFS (Federación Mexicana de Futbol Semiprofesional)</strong>. Fundada en 2013 en Fresnillo, Zacatecas, ha logrado una expansión nacional integrando equipos de las 32 entidades de la República.
+                    </p>
+                    <p style="color: #aaa; font-size: clamp(0.85rem, 2.2vw, 1rem); line-height: 1.6; margin-bottom: 30px;">
+                        Cuenta con 5 divisiones nacionales: <strong>Liga PDBnmx, Liga 1 Ascenso MXA, MXA Independiente, Liga MXA Femenil y la LNFI U-17</strong>. Estas competencias se rigen bajo el formato de la Liga MX (Liguilla). Además, establece requisitos estrictos de infraestructura, como estadios con capacidad mínima de 2 mil espectadores para la Liga PDBnmx y dimensiones de campo profesional para todas sus categorías.
+                    </p>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100067224910897&rdid=0v9vugSe56TBVxVJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18MnF1ENfL%2F" target="_blank" class="btn-league-link" style="display: inline-flex; align-items: center; gap: 10px; background: #e31e24; color: #fff; padding: 15px 35px; text-decoration: none; font-family: 'Oswald', sans-serif; font-weight: bold; border-radius: 5px; transition: 0.3s; letter-spacing: 1px; text-transform: uppercase;">
+                        <i class="fab fa-facebook"></i> Página Oficial de la Liga
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stadium-section">
+            <div class="container reveal">
+                <div class="section-title">
+                    <span class="top-label">CASA DE UNIÓN TLAXCALA F.C.</span>
+                    <h2 style="font-family: 'Oswald', sans-serif; font-size: clamp(2rem, 5vw, 3rem);">NUESTRA <span class="accent">SEDE</span></h2>
+                    <div class="separator-stadium"></div>
+                </div>
+
+                <div class="map-wrapper">
+                    <div class="map-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>CANCHA DE FUTBOL LA CAÑADA</h3>
+                        <p>Hueyotlipan, Tlaxcala, México</p>
+                        <p class="match-day-note">¡Acompáñanos a alentar al equipo en casa!</p>
+                    </div>
+                    
+                    <div class="map-frame">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.503370334812!2d-98.35332522538186!3d19.46521138182069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d028d67645a0bd%3A0xdbc28d4e3b83a955!2sCancha%20de%20f%C3%BAtbol%20La%20Ca%C3%B1ada.!5e0!3m2!1ses-419!2smx!4v1708197900000!5m2!1ses-419!2smx" 
+                            title="Ubicación de la Cancha La Cañada"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-final">
+        <div class="footer-content">
+            <p class="f-name">Unión Tlaxcala F.C. © 2026</p>
+            <p class="f-loc">Hueyotlipan, Tlaxcala, México</p>
+            <div class="f-tag">AFILIADOS A LA LIGA NACIONAL TDM | MIEMBROS FMFS</div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de Messenger -->
+    <a href="https://m.me/61587142774244" class="messenger-float" target="_blank" rel="noopener noreferrer" aria-label="Envíanos un mensaje por Messenger">
+        <i class="fab fa-facebook-messenger"></i>
+        <span>Escríbenos</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

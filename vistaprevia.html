@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>GALERÍA OFICIAL | UNIÓN TLAXCALA F.C.</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --rojo: #e31e24;
+            --negro: #000000;
+            --gris-oscuro: #0a0a0a;
+        }
+
+        body {
+            background-color: var(--negro);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+
+        /* --- HEADER CYBER --- */
+        .ultra-header {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .bg-text-tlx {
+            position: absolute;
+            font-size: 20vw;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.03);
+            font-family: 'Oswald', sans-serif;
+            z-index: 1;
+            user-select: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .red-glow {
+            color: var(--rojo);
+            text-shadow: 0 0 20px rgba(227, 30, 36, 0.5);
+        }
+
+        /* --- FEED SECTION --- */
+        .feed-section {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--negro);
+        }
+
+        .fb-container {
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(227, 30, 36, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* --- CTA SECTION --- */
+        .cta-section {
+            background-color: var(--gris-oscuro);
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .btn-fb {
+            background: #1877F2;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        /* --- BOTÓN REGRESO RÁPIDO --- */
+        .back-arrow {
+            position: absolute;
+            top: 100px;
+            left: 5%;
+            z-index: 10;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .back-arrow:hover { opacity: 1; color: var(--rojo); }
+
+        /* Ajuste para el botón Messenger en móviles */
+        @media (max-width: 480px) {
+            .messenger-float span { display: none; }
+            .messenger-float { padding: 15px; border-radius: 50%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0"></script>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo-space">
+                <img src="logo-removebg-preview.png" alt="Logo Unión Tlaxcala F.C.">
+            </div>
+            <div class="nav-center">
+                <span class="slogan-animate">MÁS UNIDOS QUE NUNCA</span>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vistaprevia.html" class="active-link" style="color: var(--rojo);">VISTA PREVIA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-links" id="mobileMenuLinks">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Cerrar menú">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="vistaprevia.html" class="active-link">VISTA PREVIA</a></li>
+        </ul>
+    </div>
+
+    <header class="ultra-header">
+        <a href="index.html" class="back-arrow">
+            <i class="fas fa-arrow-left"></i> VOLVER AL CLUB
+        </a>
+        <div class="bg-text-tlx">TLX</div>
+        <div class="header-content">
+            <span class="top-label">FOTOS OFICIALES</span>
+            <h1 class="glitch-text" style="font-family: 'Oswald'; font-size: clamp(3rem, 8vw, 6rem); margin: 10px 0;">
+                NUESTRA <span class="red-glow">GALERÍA</span>
+            </h1>
+            <div style="width: 80px; height: 4px; background: var(--rojo); margin: 0 auto;"></div>
+        </div>
+    </header>
+
+    <section class="feed-section">
+        <h3 style="margin-bottom: 30px; letter-spacing: 3px; color: #444; font-family: 'Oswald';">FEED EN VIVO</h3>
+        <div class="fb-container">
+            <div class="fb-page" 
+                data-href="https://www.facebook.com/profile.php?id=61587142774244" 
+                data-tabs="timeline" 
+                data-width="500" 
+                data-height="700" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" 
+                data-show-facepile="true">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 style="font-family: 'Montserrat'; font-weight: 900;">¿QUIERES VER MÁS?</h2>
+        <p>Síguenos en nuestra página oficial para no perderte ningún detalle.</p>
+        <a href="https://www.facebook.com/profile.php?id=61587142774244" class="btn-fb" target="_blank">
+            <i class="fab fa-facebook"></i> FACEBOOK
+        </a>
+    </section>
+
+    <footer class="main-footer" style="padding: 40px 5%; background: var(--negro); border-top: 2px solid var(--rojo); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="logo-removebg-preview.png" alt="Logo" style="height: 50px;">
+            <div>
+                <strong style="font-size: 1.1rem;">UNIÓN TLAXCALA <span style="color: var(--rojo);">F.C.</span></strong><br>
+                <small style="color: #666; letter-spacing: 2px;">FORJANDO LEYENDAS</small>
+            </div>
+        </div>
+        <div style="text-align: right; color: #444; font-size: 0.85rem;">
+            <p>© 2026 Todos los derechos reservados.</p>
+            <p><i class="fas fa-map-marker-alt"></i> Hueyotlipan, Tlaxcala</p>
+        </div>
+    </footer>
+
+    <a href="https://m.me/61587142774244" class="messenger-float" target="_blank" style="background: #0084ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; position: fixed; bottom: 20px; right: 20px; display: flex; align-items: center; gap: 10px; font-weight: bold; z-index: 1000;">
+        <i class="fab fa-facebook-messenger"></i>
+        <span>Escríbenos</span>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
